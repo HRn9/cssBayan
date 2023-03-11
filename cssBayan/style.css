@@ -52,6 +52,12 @@ h1 {
     transition: all 0.9s;
 }
 
+.meme-pic {
+    max-height: 60%;
+    max-width: 80%;
+    margin: 3% 10%;
+}
+
 @media (hover: hover)  {
 
     .meme-item:hover {
@@ -97,10 +103,72 @@ h1 {
         transition: all 0.9s;
     }
 
+}
+
+@media only screen and (min-device-width: 820px) {
+    
+    body {
+        font-size: 1.5rem;
+        line-height: 111%;
+    }
+
+    h1 {
+        margin: 10% auto;
+    }
+
+    .memes-box {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .meme-item {
+        margin-bottom: 3%;
+    }
+
+    .meme-title {
+        padding: 2%;
+    }
+
+    .arrow {
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 1.5rem 0.9rem 0 0.9rem;
+        border-color: #307ac9 transparent transparent transparent;
+        transition: all 0.9s;
+    }
+
+}
+
+@media only screen and (min-device-width: 1130px) {
+
+    h1 {
+        margin: 5% auto;
+    }
+
+    .memes-box {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
     .meme-pic {
         max-height: 60%;
         max-width: 80%;
-        margin: 3% 10%;
+        margin: 2% 10%;
     }
 
+}
+
+@media only screen and (max-device-width: 1920px) {
+    .memes-box {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .meme-pic {
+        max-height: 60%;
+        max-width: 80%;
+        margin: 2% 11.5%;
+    }
 }
