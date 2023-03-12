@@ -37,19 +37,19 @@ h1 {
 .meme-input:checked ~ .meme {
     max-height: 30%;
     opacity: 1;
-    transition: all 0.9s;
+    transition: all 0.6s linear;
 }
 
 .meme-input:checked ~ label .arrow {
     transform: rotate(-180deg);
-    transition: all 0.9s;
+    transition: all 0.6s linear;
   }
 
 .meme {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: all 0.9s;
+    transition: all 0.6s linear;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -58,14 +58,25 @@ h1 {
 .meme-pic {
     max-height: 60%;
     max-width: 80%;
-    margin: 3% 10%;
+    margin: 3% auto;
 }
 
 @media (hover: hover)  {
 
     .meme-item:hover {
         background-color: #acbdee;
-        transition: all .3s ease-out;
+        transition: all 0.6s linear;
+    }
+
+    .meme-item:hover .meme {
+        max-height: 30%;
+        opacity: 1;
+        transition: all 0.6s linear;
+    }
+
+    .meme-item:hover .arrow {
+        transform: rotate(-180deg);
+        transition: all 0.6s linear;
     }
 
     .meme-item {
@@ -75,6 +86,19 @@ h1 {
     .meme-title {
         cursor: pointer;
     }
+
+    .arrow {
+        opacity: 0;
+    }
+    
+    .memes-box:hover .arrow {
+        opacity: 1;
+    }
+
+    .meme {
+        cursor: pointer;
+    }
+
 }
 
 @media only screen and (max-device-width: 819px) {
@@ -103,7 +127,7 @@ h1 {
         border-style: solid;
         border-width: 1rem 0.5rem 0 0.5rem;
         border-color: #307ac9 transparent transparent transparent;
-        transition: all 0.9s;
+        transition: all 0.6s linear;
     }
 
 }
@@ -139,7 +163,7 @@ h1 {
         border-style: solid;
         border-width: 1.5rem 0.9rem 0 0.9rem;
         border-color: #307ac9 transparent transparent transparent;
-        transition: all 0.9s;
+        transition: all 0.6s linear;
     }
 
 }
@@ -162,7 +186,7 @@ h1 {
     .meme-pic {
         max-height: 60%;
         max-width: 80%;
-        margin: 2% 10%;
+        margin: 2% auto;
     }
 
 }
@@ -181,7 +205,7 @@ h1 {
     .meme-pic {
         max-height: 60%;
         max-width: 80%;
-        margin: 2% 11.5%;
+        margin: 2% auto;
     }
 }
 
